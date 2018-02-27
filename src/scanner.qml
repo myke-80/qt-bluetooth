@@ -39,13 +39,30 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.0
+import QtQuick 2.3
+import QtQuick.Window 2.2
 import QtBluetooth 5.2
 
-Item {
+Window {
     id: top
 
+    width: 200
+    height: 200
+    title: "Qt-BT-Scanner"
+    visible: true
+
+    visibility: Window.FullScreen
+
     property BluetoothService currentService
+
+    Item
+    {
+        focus: true
+        Keys.onEscapePressed: {
+            event.accepted = true;
+            Qt.quit();
+        }
+    }
 
     BluetoothDiscoveryModel {
         id: btModel
