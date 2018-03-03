@@ -1,3 +1,3 @@
-# qml-scanner
+# qt-bt-scanner
 
 A simple Qt5-QML test application that list the bluetooth devices

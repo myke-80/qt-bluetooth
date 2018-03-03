@@ -80,6 +80,7 @@ Window {
                 case BluetoothDiscoveryModel.InvalidBluetoothAdapterError:
                     console.log("Error: Invalid Bluetooth Adapter Error"); break;
                 case BluetoothDiscoveryModel.NoError:
+                    console.log("No error");
                     break;
                 default:
                     console.log("Error: Unknown Error"); break;
