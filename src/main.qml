@@ -106,7 +106,7 @@ Window
                 id: txStatus
                 x: 5
                 y: -139
-                text: qsTr("Starting...")
+                text: qsTr("")
                 styleColor: "#000000"
                 font.family: myTahoma.name
                 anchors.top: parent.top
@@ -168,7 +168,7 @@ Window
                             id: bttext
                             text: deviceName ? deviceName : name
                             font.family: myTahoma.name
-                            font.pointSize: 15
+                            font.pixelSize: 15
                         }
 
                         Text
@@ -195,7 +195,7 @@ Window
                             opacity: btDelegate.expended ? 1 : 0.0
                             text: get_details(service)
                             font.family: myTahoma.name
-                            font.pointSize: 13
+                            font.pixelSize: 13
 
                             Behavior on opacity
                             {
